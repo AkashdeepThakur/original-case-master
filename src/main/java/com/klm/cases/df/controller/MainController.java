@@ -122,7 +122,7 @@ public class MainController {
 		fairResponce
 				.setOrigin(locationsMap.get(fairResponce.getOrigin()).getName() + "(" + fairResponce.getOrigin() + ")");
 		fairResponce.setDestination(
-				locationsMap.get(fairResponce.getDestination()).getName() + "(" + fairResponce.getOrigin() + ")");
+				locationsMap.get(fairResponce.getDestination()).getName() + "(" + fairResponce.getDestination() + ")");
 		model.addAttribute("fairResponce", fairResponce);
 		uniqueKey = UUID.randomUUID();  
 		log.info("TransactionId : "+uniqueKey+" Fair displayed for"+fairResponce.getOrigin()+":"+fairResponce.getOrigin());
@@ -150,7 +150,7 @@ public class MainController {
 		
 		model.addAttribute("locations", locations);
 		uniqueKey = UUID.randomUUID();  
-		log.info("TransactionId : "+uniqueKey+" request to add list to and object to hold data for source and destination selection");
+		log.info("TransactionId : "+uniqueKey+" request to search the  airport");
 		return "list-airport-search";
 	}
 }
