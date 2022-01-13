@@ -69,7 +69,7 @@ public class BootstrapTest {
 	    public void searchAirportDisplay() throws Exception {
 
 	        ResponseEntity<String> response = restTemplate.getForEntity(
-				new URL("http://localhost:" + port + "/klm/search-result?theSearchName=SD").toString(), String.class);
+				new URL("http://localhost:" + port + "/klm/search?theSearchName=SD").toString(), String.class);
 	        assertNotNull(response.getBody());
 	        assertEquals(HttpStatus.ACCEPTED, response.getStatusCode());
 
