@@ -35,5 +35,5 @@ Functionalities Implemented  :
 - 7.I have also Implemented a custom endpoint in actuator through HandlerInterceptor for all requested api monitoring things.
     but have commented the code since have implemented a better way (through prometheus and grafana).
     if want to use that end point as well goto WebConfiguration class and uncomment code from line 23 to 30 
-    and got :  http://localhost:9000/actuator/apimonitor and Json data will be visible 
+    and goto :  http://localhost:9000/actuator/apimonitor and Json data will be visible 
 
